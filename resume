@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Thanks</title>
+		<title>Resume</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,16 +25,16 @@
 						</nav>
 					</header>
 
-          <!-- Menu -->
-  					<nav id="menu">
-  						<ul class="links">
-  							<li><a href="https://avijitnalwa.github.io/">Home</a></li>
-  							<li><a href="landing.html">About</a></li>
-  							<li><a href="#one" class="scrolly">Projects</a></li>
-  							<li><a href="#contact" class="scrolly">Contact</a></li>
-  							<!-- <li><a href="#contact">Contact</a></li> -->
-  						</ul>
-  					</nav>
+					<!-- Menu -->
+						<nav id="menu">
+							<ul class="links">
+								<li><a href="https://avijitnalwa.github.io/">Home</a></li>
+								<li><a href="landing.html">About</a></li>
+								<li><a href="#one" class="scrolly">Projects</a></li>
+								<li><a href="#contact" class="scrolly">Contact</a></li>
+								<!-- <li><a href="#contact">Contact</a></li> -->
+							</ul>
+						</nav>
 
 				<!-- Banner -->
 					<section id="banner" class="major">
