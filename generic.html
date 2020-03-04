@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Forty by HTML5 UP</title>
+		<title>Movie Recommendation System</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,23 +19,20 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<a href="index.html" class="logo"><strong>Avijit/strong> <span>Singh Nalwa</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
 
-				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+							<li><a href="https://avijitnalwa.github.io/">Home</a></li>
+							<!-- <li><a href="landing.html">About</a></li> -->
+							<li><a href="https://avijitnalwa.github.io/movie_recommendation_system" class="scrolly">Movie Recommendation System Project</a></li>
+							<li><a href="#one" class="scrolly">Projects</a></li>
+							<li><a href="#contact" class="scrolly">Contact</a></li>
+							<!-- <li><a href="#contact">Contact</a></li> -->
 						</ul>
 					</nav>
 
@@ -46,12 +43,21 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Generic</h1>
+										<h1>Movie Recommendation System</h1>
 									</header>
 									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>The Project</h2>
+									<p>A machine learning model that detects your taste in movies and suggests new personalized recommendations to watch. </p>
+									<h2> Method </h2>
+									<p>	I use Collaborative Filtering via Singular Value Decomposition (SVD) & Stochastic Gradient Descent (SGD) implemented well by the Surprise (http://surpriselib.com/) python library.
+									<h2>Data </h2>
+									<p>The Dataset: MovieLens Full Dataset (https://grouplens.org/datasets/movielens/latest/) Numbers: 27,000,000 ratings by 280,000 users for 58,000 movies I use the ratings, and movies files. Though this original dataset is huge, I add restrictions to reach a much smaller size containing more frequently rated movies, and more frequently rating users. Along with this I preprocess the data and save it to a pickle file for ease of use through the project. (Find the restriction & processing in the Data Pre-Processing.py file)
+									</p>
+									<h2>Model</h2>
+									<p> I use the surprise implementation of the SVD & SGD (Stochastic Gradient Descent) model based on Simon Funk's Netflix Prize approach. I also built a model using SVD++(pp) which accounts for implicit ratings (based on the assumption that rating/not rating a movie is an indication of some preference). However, after testing both approaches I found that the more traditional SVD approach yielded more efficient and better generalizing results. General Structure The main file: Movie Recommendation Generator.py allows a user to rate as many/few>1 movies as they wish, and then provides them with the n (of their choosing) best movie recommendations. It also produces a .csv file containing sorted data of predicted titles and ratings.
+									</p>
+									<h2>References</h2>
+									<p>I referred/used certain aspects of the following resources: https://grouplens.org/datasets/movielens/latest/ http://surpriselib.com/ https://stackoverflow.com/ https://github.com/AvijitNalwa/MyDataSciencePortfolio/tree/master/movie_recommender</p>
 								</div>
 							</section>
 
